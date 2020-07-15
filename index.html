@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title id="title"><h1>Smart survey</h1>
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-
-  <body>
-    <p>Hello World,we are software developers</p>
+  <body class="body">
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <p id="description">Survey for software developers</p>
+    <form id="survey-form">
+      <label id="name-label">Name</label><br>
+      <input id="name" type="text" placeholder="Your Name"><br>
+      <label id="email-label">Email</label><br>
+      <input id="email"placeholder="Your email" type="email"><br>
+      <label id="number-label"placeholder="Your Age">Age</label><br>
+      <input id="number"min="15"max="100"type="number"><br>
+      <p>What is your experience as a developer?</p><br>
+      <select id="dropdown">
+        <option value="Beginner">Beginner</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="Pro">Pro</option> </select><br> <p>Is software development the way to go?</p><br><label>
+      <input type="radio"value="Yes"name="question"class="input-radio">Yes</input><br><input type="radio"value="No"name="question"class="input-radio">No</input><br>
+    <p>Would you recommend software development to your friends? Tell us why.</p><br>  
+    <textarea id="recommmendations"class="input-textarea"name="reason"placeholder="Tell us why here"></textearea>    
+    </form>
+<p>Hello World,we are software developers</p>
+    
 
     <!--
 
